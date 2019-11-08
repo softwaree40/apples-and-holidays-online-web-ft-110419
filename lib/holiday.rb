@@ -18,6 +18,16 @@ def second_supply_for_fourth_of_july(holiday_hash)
   #   }
   # }
   # return the second element in the 4th of July array
+      new_years = []
+    holiday_hash.each do |seasons ,value|
+        value.each do |season , data|
+          if season == :fourth_of_july
+             new_years << data[1]
+          #binding.pry
+          end
+       end
+    end
+    new_years.join
 end
 
 def add_supply_to_winter_holidays(holiday_hash, supply)
